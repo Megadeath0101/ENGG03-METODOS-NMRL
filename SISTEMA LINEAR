@@ -1,0 +1,33 @@
+import numpy as np
+
+# Definindo as equações do sistema linear
+# 2x + 3y = 4
+# x - y = 1
+
+# Criando a matriz dos coeficientes
+A = np.array([[2.0, 3.0], [1.0, -1.0]])
+
+# Criando o vetor das constantes
+b = np.array([[4.0], [1.0]])
+
+# Resolvendo o sistema linear
+sol = np.linalg.solve(A, b)
+
+# Imprimindo a solução
+print("x =", sol[0,0])
+print("y =", sol[1,0])
+
+# Criando a matriz dos coeficientes
+A = np.array([[1.0, 1.0, 1.0], [2.0, -1.0, -3.0], [-5.0, -3.0, 1.0]])
+
+# Criando o vetor das constantes
+b = np.array([[3.0], [4.0], [10.0]])
+
+# Resolvendo o sistema linear
+sol = np.linalg.solve(A, b)
+
+# Imprimindo a solução
+print("x =", sol[0,0])
+print("y =", sol[1,0])
+print("z =", sol[2,0])
+
